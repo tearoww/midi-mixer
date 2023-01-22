@@ -38,6 +38,6 @@ As you probably guessed, no persistence also means no savable profiles at this t
 ------------
 ## Miscellaneous info
 
-This is the first actually useful project that I have done. If you notice some kind of Python convention mistake, please let me know or submit a pull request. I guess all kinds of pull requests and issues are also welcome, I haven't really collaborated on GitHub before and have mixed feelings of this whole thing.
+This is the first actually useful project that I have done. If you notice some kind of Python convention mistake, please let me know or submit a pull request. I guess all kinds of pull requests and issues are also welcome, I haven't really collaborated on GitHub before and have mixed feelings about putting/having this here at all.
 
-I know Python isn't the obvious and most definitely not the prettiest choice, but that's what I want to focus on. It would be cool to see this project inspire someone to make a modern-looking version of this in another language.
+I know Python isn't the obvious and most definitely not the prettiest choice for a GUI, but it is the language I want to focus on. It would be cool to see this project inspire someone to make a modern-looking version of this in another language.
