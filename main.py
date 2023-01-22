@@ -49,6 +49,11 @@ def splitter(old_list, type_of_list):
     return new_list
 
 
+def reset_button(control_btn):
+    if control_btn.cget("state") == "disabled":
+        control_btn.configure(state="normal", text="Hook control")
+
+
 class Control:
     def __init__(self, frame, ports, rows):
         self.rows = rows
@@ -78,6 +83,7 @@ class Control:
 
         self.device_label.grid(row=self.rows, column=1)
         self.device_combobox.grid(row=self.rows, column=2)
+        self.device_combobox.bind("<<ComboboxSelected>>", lambda event: reset_button(self.control_button))
         self.control_label.grid(row=self.rows, column=3)
         self.control_button.grid(row=self.rows, column=4)
         self.input_label.grid(row=self.rows, column=5)
