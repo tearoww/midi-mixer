@@ -59,11 +59,13 @@ class Control:
         self.split_ports = splitter(self.ports, "port")
         self.device_label = tk.Label(frame, text="Select device:")
         self.split_sink_inputs = splitter(self.sink_inputs, "sink input")
+
         self.device_combobox = ttk.Combobox(
             self.frame,
             values=self.split_ports,
             state="readonly",
             postcommand=lambda: self.device_combobox.configure(values=splitter(get_ports(), "port")))
+
         self.control_label = tk.Label(self.frame, text="No control hooked")
         self.control_button = tk.Button(self.frame, text="Hook control", command=self.hook_thread)
         self.input_label = tk.Label(self.frame, text="Select sink input:")
